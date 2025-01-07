@@ -78,6 +78,8 @@ function App() {
     if (hour === 0 && minute === 0 && second === 0) {
       resetTimer();
       alert('Timer is Finished');
+      clearInterval(tid);
+      return;
     }
 
   }
